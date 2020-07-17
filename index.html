@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Cadastro</title>
+</head>
+
+<body>
+    <header class="menu">
+        <nav class="mainNav">
+            <ul>
+                <li><a href="/index.html">Início</a></li>
+                <li><a href="#form">Formulário</a></li>
+                <li><a href="#end">Fim</a></li>
+            </ul>
+        </nav>
+    </header>
+    <form action="POST" id="form">
+        <h2 class="titulo">Cadastro</h2>
+        <label for="nome">Nome:
+            <input type="text" name="nome" placeholder="Nome" id="nome">
+        </label>
+        <label for="email">Email:
+            <input type="email" name="email" placeholder="Email" id="email">
+        </label>
+        <label for="telef">Telefone:
+            <input type="tel" name="telefone" placeholder="Ex.: (00) 00000-0000" id="telef">
+        </label>
+
+
+        <button>Incluir</button>
+    </form>
+    <div id="end">
+        Final da Página
+    </div>
+</body>
+
+</html>
