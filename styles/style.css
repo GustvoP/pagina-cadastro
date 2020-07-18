@@ -39,7 +39,7 @@ body {
 .mainNav a:hover {
   background-color: whitesmoke;
   color: #013842;
-  transition: 0.3s;
+  transition: 0.4s;
 }
 
 .mainNav ul {
@@ -51,12 +51,28 @@ body {
   display: inline-block;
 }
 
-form {
-  margin: 150px 40px 0px 40px;
+#form {
+  display: inline-block;
+  margin: 100px 40px 0px 40px;
   background-color: #024b59;
   border: solid 2px #2f7d8c;
   border-radius: 15px;
   padding: 15px;
+  width: 500px;
+}
+
+#form label {
+  color: whitesmoke;
+  margin: 15px;
+  display: block;
+}
+
+#form input,
+select {
+  outline: none;
+  border: solid 2px #2f7d8c;
+  border-radius: 8px;
+  padding: 7px;
 }
 
 .titulo {
@@ -65,6 +81,24 @@ form {
   font-size: 1.6em;
 }
 
+button {
+  font-size: 1.1em;
+  font-family: "Roboto", sans-serif;
+  color: whitesmoke;
+  margin: 10px;
+  padding: 10px;
+  border: solid 2px whitesmoke;
+  border-radius: 10px;
+  background: none;
+  outline: none;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: whitesmoke;
+  color: #013842;
+  transition: 0.4s;
+}
 #end {
   margin-top: 1700px;
 }

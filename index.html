@@ -19,23 +19,65 @@
             </ul>
         </nav>
     </header>
-    <form action="POST" id="form">
+    <form method="POST" id="form">
         <h2 class="titulo">Cadastro</h2>
-        <label for="nome">Nome:
-            <input type="text" name="nome" placeholder="Nome" id="nome">
+        <label>Nome:
+            <input type="text" name="nome">
         </label>
-        <label for="email">Email:
-            <input type="email" name="email" placeholder="Email" id="email">
+        <label>Data de Nascimento:
+            <input type="date" name="dataNasc">
         </label>
-        <label for="telef">Telefone:
-            <input type="tel" name="telefone" placeholder="Ex.: (00) 00000-0000" id="telef">
+        <label>Sexo:
+            <select name="sexo">
+                <option value="vazio">Selecione</option>
+                <option value="masculino">Masculino</option>
+                <option value="feminino">Feminino</option>
+                <option value="outro">Outro</option>
+            </select>
+        </label>
+        <label>Email:
+            <input type="email" name="email">
+        </label>
+        <label>Telefone:
+            <input type="tel" name="telefone" placeholder="Ex.: (00) 00000-0000">
+        </label>
+        <label>Estado:
+            <select name="estado">
+                <option value="vazio">Selecione</option>
+                <option value="AC">Acre</option>
+                <option value="AL">Alagoas</option>
+                <option value="AP">Amapá</option>
+                <option value="AM">Amazonas</option>
+                <option value="BA">Bahia</option>
+                <option value="CE">Ceará</option>
+                <option value="ES">Espírito Santo</option>
+                <option value="GO">Goiás</option>
+                <option value="MA">Maranhão</option>
+                <option value="MT">Mato Grosso</option>
+                <option value="MS">Mato Grosso do Sul</option>
+                <option value="MG">Minas Gerais</option>
+                <option value="PA">Pará</option>
+                <option value="PB">Paraíba</option>
+                <option value="PR">Paraná</option>
+                <option value="PE">Pernambuco</option>
+                <option value="PI">Piauí</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="RN">Rio Grande do Norte</option>
+                <option value="RS">Rio Grande do Sul</option>
+                <option value="RO">Rondônia</option>
+                <option value="RR">Roraima</option>
+                <option value="SC">Santa Catarina</option>
+                <option value="SP">São Paulo</option>
+                <option value="SE">Sergipe</option>
+                <option value="TO">Tocantins</option>
+            </select>
         </label>
 
 
-        <button formaction="http://localhost:3003/usuarios">Incluir</button>
+        <button formaction="http://localhost:3003/cadastro">Salvar</button>
     </form>
     <div id="end">
-        Final da Página
+        <h1 style="text-align: center;">Final da Página</h1>
     </div>
 </body>
 

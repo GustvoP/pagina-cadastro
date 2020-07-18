@@ -4,9 +4,9 @@ const app = express();
 
 app.use(bodyParser.urlencoded({ extended: true }));
 
-app.post("/usuarios", (req, resp) => {
+app.post("/cadastro", (req, resp) => {
   console.log(req.body);
-  resp.send("<h1>Parabéns. Usuário Incluido!</h1>");
+  resp.send("<h1>Cadastro Concluído</h1>");
 });
 
 app.listen(3003);
